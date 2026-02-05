@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(rgb(255, 255, 255) 30%, #00f7ff 70%);
+    background-image: linear-gradient(rgb(255, 255, 255) 30%, #00f7ff 70%) fixed;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
