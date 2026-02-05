@@ -12,6 +12,7 @@ body {
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
     background: url(/images/knives-out.jpg) right repeat-y;
+    background-size: 20%;
     background-attachment: fixed;
 
 }
