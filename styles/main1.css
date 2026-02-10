@@ -1,5 +1,5 @@
 html {
-background-image: linear-gradient(rgba(255, 255, 255, 0.584) 30%, #00f7ff6b 70%);
+background-image: linear-gradient(rgba(255, 255, 255, 0.584) 30%, #00f7ff6b 70%) linear-gradient(40);
 
 }
 body {
