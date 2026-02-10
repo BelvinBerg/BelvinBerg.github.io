@@ -18,11 +18,11 @@ body {
 }
 a:hover, a:focus {
     font-style: italic;
-    color: orangered;
+    color: rgb(37, 37, 37);
 }
 header h1 {
     font-size:175%;
-    color: blueviolet;
+    color: rgb(0, 225, 255);
     text-indent: 30px;
 }
 header h2 {
@@ -35,7 +35,7 @@ header img {
     margin-left: 2em;
 }
 .shadow{
-    text-shadow: 2px 2px 2px rgb(128, 0, 0);
+    text-shadow: 2px 2px 2px rgb(36, 36, 36);
 }
 main {
     clear: left;
