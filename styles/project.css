@@ -22,7 +22,7 @@ a:hover, a:focus {
     border-style: dotted solid
 }
 header{
-    border-top: 2px solid lightskyblue;
+    border-bottom: 2px solid lightskyblue;
 }
 header h1 {
     font-size:175%;
