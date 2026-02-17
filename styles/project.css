@@ -80,6 +80,6 @@ p.fixed {
     float: right;
     position: fixed;
     background-color: aqua;
-    margin-right: 0.5em;
+    right: 0.5em;
     padding: 1.5em;
 }
