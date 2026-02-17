@@ -22,7 +22,7 @@ a:hover, a:focus {
     border-style: dotted solid
 }
 header{
-    position: 4em;
+    
     border-bottom: 2px solid lightskyblue;
 }
 header h1 {
@@ -79,5 +79,6 @@ p.fixed {
     width: auto;
     float: right;
     background-color: aqua;
+    margin-right: 0.5em;
     padding: 1.5em;
 }
