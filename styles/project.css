@@ -76,4 +76,7 @@ footer {
 }
 p.fixed {
     width: auto;
+    float: right;
+    background-color: aqua;
+    padding: 0.5em;
 }
