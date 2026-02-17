@@ -22,6 +22,7 @@ a:hover, a:focus {
     border-style: dotted solid
 }
 header{
+    position: 4em;
     border-bottom: 2px solid lightskyblue;
 }
 header h1 {
