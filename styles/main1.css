@@ -21,12 +21,12 @@ a:hover, a:focus {
 }
 header h1 {
     font-size:175%;
-    color: rgb(0, 225, 255);
+    color: rgb(255, 183, 0);
     text-indent: 30px;
 }
 header h2 {
     font-size:130%;
-    color: #0c0c0c;
+    color: #ff9d00fd;
     text-indent: 30px;
 }
 header img {
