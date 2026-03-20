@@ -64,7 +64,6 @@ article h2 {
 }
 aside {
     position: fixed;
-    top: 150px;
     width: 20%;
     float: right;
     background-color: rgb(21, 169, 255);
