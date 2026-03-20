@@ -43,7 +43,7 @@ html {
     color: yellow; 
 }
 article h1 {
-    text-align:left;
+    position: left;
 }
 aside ol {
     list-style-type: upper-roman;
