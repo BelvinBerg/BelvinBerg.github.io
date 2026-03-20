@@ -5,7 +5,7 @@ header h1 {
     text-align: center;
 }
 body {
-    margin: 2em;
+    margin: 4em;
 }
 #nav_menu ul {
     list-style-type: none;
@@ -15,8 +15,7 @@ body {
     border-bottom: 2px solid black; 
 }
 #nav_menu ul li {
-    display: inline;
-    padding: 0 1.5em; 
+    float:left;
 }
 #nav_menu ul li a {
     text-align: center;
