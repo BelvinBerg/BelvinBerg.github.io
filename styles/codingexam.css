@@ -39,6 +39,15 @@ body {
 #nav_menu ul li a.current {
     color: yellow; 
 }
+article {
+    clear: left;
+    width: 70%;
+    float: left;
+    column-count: 3;
+    column-rule: 2px dotted rgb(0, 149, 175);
+    column-gap: 2em;
+    margin-left: 2em;
+}
 article p::first-letter {
     font-size: 3em;
     font-weight: bold;
