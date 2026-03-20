@@ -16,7 +16,7 @@ body {
     border-bottom: 2px solid black; 
 }
 #nav_menu ul li {
-    float: left;
+    float: center;
 }
 #nav_menu ul li a {
     text-align: center;
