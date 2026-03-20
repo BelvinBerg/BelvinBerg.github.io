@@ -42,7 +42,7 @@ body {
 }
 article {
     clear: left;
-    width: 70%;
+    width: 75%;
     float: left;
     column-count: 3;
     column-rule: 2px dotted rgb(0, 149, 175);
@@ -65,7 +65,7 @@ article h2 {
 aside {
     position: fixed;
     top: 150px;
-    width: auto;
+    width: 20%;
     float: right;
     background-color: rgb(21, 169, 255);
     right: 0.5em;
