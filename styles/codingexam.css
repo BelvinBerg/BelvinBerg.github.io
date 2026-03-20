@@ -63,13 +63,12 @@ article h2 {
     text-align: left;
 }
 aside {
-    position: fixed;
     width: 20%;
     float: right;
     background-color: rgb(21, 169, 255);
     right: 0.5em;
     padding: 1.5em;
-    border:2px solid, #0c0c0c;
+    border:2px solid #0c0c0c;
 }
 aside ol {
     list-style-type: upper-roman;
