@@ -84,6 +84,7 @@ aside ul ol {
 footer {
     clear: both;
     border-top: 3px solid rgb(0, 110, 179);
+    display: inline-block;
     text-align: center;
     font-size: 80%;
 }
