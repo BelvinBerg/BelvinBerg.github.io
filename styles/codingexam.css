@@ -39,7 +39,7 @@ article p::first-letter {
 }
 article img{
     float: left;
-    padding: 1em;
+    padding: 0em 1em;
 }
 article h2 {
     text-align: left;
