@@ -42,6 +42,9 @@ html {
 #nav_menu ul li a.current {
     color: yellow; 
 }
+article h1 {
+    text-align:left;
+}
 aside ol {
     list-style-type: upper-roman;
 }
