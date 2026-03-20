@@ -45,15 +45,20 @@ article h2 {
     text-align: left;
 }
 aside {
-    width: 20%;
-    float: right;
-    background-color: #60b2ff;
-    margin-top: 0.5em;
-    padding: 1em;
-}    
+    clear: both;
+    border-top: 2px solid lightskyblue;
+}
 aside ol {
     list-style-type: upper-roman;
-}
+    width: auto;
+    float: right;
+    position: fixed;
+    background-color: aqua;
+    right: 0.5em;
+    padding: 1.5em;
+    border:2px solid, #0c0c0c;
+    border-radius: 25px;
+} 
 aside ul {
     list-style-type: square;
 }
