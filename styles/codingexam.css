@@ -9,7 +9,7 @@ body {
 }
 #nav_menu ul { 
     list-style-type: none; 
-    border-bottom: 1em;
+    border-bottom: 1em solid black;
 }
 #nav_menu ul li {
     float: left; 
