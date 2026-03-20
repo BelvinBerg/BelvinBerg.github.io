@@ -1,8 +1,11 @@
 html {
     scroll-behavior: smooth;
+    background-image: url(images/SHSU) fixed;
+    background-position: right;
 }
 body {
-    margin: 4em;
+    width: 95%;
+    margin: 15px auto;
 }
 #nav_menu ul { 
     list-style-type: none;
