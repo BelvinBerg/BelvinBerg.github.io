@@ -6,9 +6,9 @@ body {
 }
 #nav_menu ul { 
     list-style-type: none;
-    padding-bottom: 2em; 
+    padding-bottom: 1em; 
     text-align: center;
-    border-bottom: 5px solid black; 
+    border-bottom: 3px solid black; 
     overflow: auto;
 }
 #nav_menu ul li {
