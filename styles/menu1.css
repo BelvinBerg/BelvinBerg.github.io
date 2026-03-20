@@ -5,8 +5,7 @@ header h1 {
     text-align: center;
 }
 body {
-    margin-left: 10em auto;
-    margin-right: 10em auto;
+    margin: 2em;
 }
 #nav_menu ul {
     list-style-type: none;
@@ -25,7 +24,7 @@ body {
     background-color: rgba(230, 168, 0, 0.877);
     font-weight: bold;
     color: rgb(0, 0, 0); 
-    padding: 0.9em 2em;
+    padding: 0.7em 2em;
 }
 #nav_menu ul li a.current {
     text-decoration: none; 
