@@ -8,8 +8,10 @@ body {
     margin: 4em;
 }
 #nav_menu ul { 
-    list-style-type: none; 
-    border-bottom: 1em solid black;
+    list-style-type: none;
+    padding-bottom: 2em; 
+    text-align: center;
+    border-bottom: 2px solid black; 
 }
 #nav_menu ul li {
     float: left; 
