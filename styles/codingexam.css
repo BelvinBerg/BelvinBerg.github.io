@@ -66,9 +66,9 @@ article h2 {
     text-align: left;
 }
 aside {
+    float: right;
     position: fixed;
     top: 15em;
-    float: right;
     width: 20%;
     background-color: rgb(21, 169, 255);
     padding: 1.5em;
