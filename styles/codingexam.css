@@ -44,6 +44,13 @@ article img{
 article h2 {
     text-align: left;
 }
+aside {
+    width: 20%;
+    float: right;
+    background-color: #60b2ff;
+    margin-top: 0.5em;
+    padding: 1em;
+}    
 aside ol {
     list-style-type: upper-roman;
 }
