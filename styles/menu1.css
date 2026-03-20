@@ -19,12 +19,15 @@ body {
     padding: 0 1.5em; 
 }
 #nav_menu ul li a {
-    text-align: left;
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0; /* padding above and below a elements */
     text-decoration: none;
-    background-color: rgba(230, 168, 0, 0.877);
+    background-color: blue;
+    color: white;
     font-weight: bold;
-    color: rgb(0, 0, 0); 
-    padding: 0.7em 2em;
+    border-right: 2px solid white;
 }
 #nav_menu ul li a.current {
     text-decoration: none; 
