@@ -5,8 +5,8 @@ header h1 {
     text-align: center;
 }
 body {
-    margin-left: 2em auto;
-    margin-right: 2em auto;
+    margin-left: 10em auto;
+    margin-right: 10em auto;
 }
 #nav_menu ul {
     list-style-type: none;
