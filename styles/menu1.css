@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+header h1 {
+    text-align: center;
+}
 #nav_menu ul {
     list-style-type: none;
     padding: 1em 0; 
