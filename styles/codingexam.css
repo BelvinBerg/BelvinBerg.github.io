@@ -45,8 +45,6 @@ article h2 {
     text-align: left;
 }
 aside {
-    clear: both;
-    border-top: 2px solid lightskyblue;
     width: auto;
     float: right;
     position: fixed;
@@ -64,7 +62,8 @@ aside ul {
     list-style-type: square;
 }
 footer {
-    border-top: 3px;
+    clear: both;
+    border-top: 2px solid lightskyblue;
     text-align: center;
     font-size: 80%;
 }
