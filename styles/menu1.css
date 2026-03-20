@@ -16,7 +16,7 @@ header h1 {
     padding: 0 1.5em; 
 }
 #nav_menu ul li a {
-    text-align: left;
+    text-align: center;
     display: block;
     width: 175px;
     text-decoration: none;
