@@ -57,3 +57,8 @@ aside ol {
 aside ul {
     list-style-type: square;
 }
+footer {
+    border-top: 3px;
+    text-align: center;
+    font-size: 80%;
+}
