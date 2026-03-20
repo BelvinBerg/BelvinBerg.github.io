@@ -16,7 +16,7 @@ header h1 {
     padding: 0 1.5em; 
 }
 #nav_menu ul li a {
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     background-color: rgba(230, 168, 0, 0.877);
     font-weight: bold;
