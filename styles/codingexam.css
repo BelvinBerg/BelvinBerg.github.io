@@ -50,7 +50,7 @@ article {
     margin-left: 2em;
 }
 article h2{
-    color: rgb(0, 132, 209);
+    color: rgb(128, 0, 0);
 }
 article p::first-letter {
     font-size: 3em;
