@@ -9,7 +9,7 @@ body {
 }
 #nav_menu ul {
     list-style-type: none;
-    padding: 1em 0; 
+    padding: 2em 0; 
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black; 
@@ -19,8 +19,6 @@ body {
 }
 #nav_menu ul li a {
     text-align: center;
-    display: block;
-    width: 175px;
     text-decoration: none;
     background-color: rgba(230, 168, 0, 0.877);
     font-weight: bold;
