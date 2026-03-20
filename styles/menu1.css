@@ -46,7 +46,7 @@ header h1 {
     color: yellow; 
 }
 article h2 {
-    float: left;
+    text-align: left;
 }
 aside ol {
     list-style-type: upper-roman;
