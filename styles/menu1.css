@@ -4,6 +4,9 @@ html {
 header h1 {
     text-align: center;
 }
+body {
+    margin: 15px auto;
+}
 #nav_menu ul {
     list-style-type: none;
     padding: 1em 0; 
