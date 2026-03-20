@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 2em 4em;
+    margin: 4em;
 }
 #nav_menu ul { 
     list-style-type: none;
