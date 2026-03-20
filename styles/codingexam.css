@@ -37,6 +37,9 @@ article p::first-letter {
     font-style: italic;
     color: rgb(0, 0, 0);
 }
+article img{
+    float: left;
+}
 article h2 {
     text-align: left;
 }
