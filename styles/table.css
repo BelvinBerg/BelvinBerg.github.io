@@ -50,14 +50,13 @@ table.second thead tr:first-child{
 table.third {
     vertical-align: top;
     border-collapse: collapse;
-    border: 2px solid purple;
-    caption-side: top;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
+    caption-side: top;
 }
 
 table.third caption{
-    padding: 1em;
+    padding: 0.6em;
     background-color: lightgreen;
     border-bottom: 3px solid orange;
 }
@@ -66,7 +65,7 @@ table.third th {
 }
 
 table.third thead {
-    padding: 1em;
+    padding: 0.6em;
     text-align: middle;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
