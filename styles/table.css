@@ -49,11 +49,21 @@ table.second thead tr:first-child{
 
 table.third {
     vertical-align: top;
+    border-collapse: collapse;
+    border: 2px solid purple;
+    caption-side: bottom;
 }
 
-tr:first-child,
-tr:nth-child(...),
-tr:last-child {
+table.third th {
+    background-color: salmon;
+}
+
+table.third th, table.third td {
+    padding: 0.7em;
+    vertical-align: middle;
+    border: 2px solid purple;
+}
+tr:first-child, tr:nth-child(...), tr:last-child {
     border-top: 2px solid orangered;
 }
 
