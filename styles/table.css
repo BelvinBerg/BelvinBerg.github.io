@@ -63,7 +63,7 @@ table.third caption {
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
-table.third thead tr td {
+table.third thead tr th {
     font-family: 'Times New Roman', Times, serif;
     text-align: center ;
     font-weight: bold;
