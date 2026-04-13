@@ -76,8 +76,8 @@ table.third tr:first-child tr:nth-child(3) {
     vertical-align: top;
 }
 
-tr:last-child {
-
+table.third tr:nth-child(3) tr:last-child {
+    vertical-align: top;
 }
 
 @media (max-width: 425px) {
