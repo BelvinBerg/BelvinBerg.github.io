@@ -72,11 +72,8 @@ table.third thead{
     border-bottom: 3px solid orange;
 }
 
-tr:first-child {
-
-} 
-tr:nth-child() {
-
+table.third tr:first-child tr:nth-child(3) {
+    vertical-align: top;
 }
 
 tr:last-child {
