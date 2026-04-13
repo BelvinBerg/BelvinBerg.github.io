@@ -64,11 +64,16 @@ table.third th {
     background-color: salmon;
 }
 
-table.third thead {
+table.third thead{
     padding: 0.6em;
-    text-align: middle;
+    vertical-align: middle;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
+}
+
+table.third thead tr td{
+    text-align: center;
+    background-color: lightgreen;
 }
 
 tr:first-child, tr:nth-child(), tr:last-child {
