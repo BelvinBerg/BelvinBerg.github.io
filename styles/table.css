@@ -72,11 +72,6 @@ table.third thead{
     border-bottom: 3px solid orange;
 }
 
-table.third thead tr td {
-    text-align: center;
-    background-color: lightgreen;
-}
-
 tr:first-child {
 
 } 
