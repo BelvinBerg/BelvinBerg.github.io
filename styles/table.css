@@ -28,7 +28,7 @@ table.first tr:nth-child(odd) {
 table.second {
     border-collapse: collapse;
     border: 2px solid purple;
-    caption-side: bottom;
+    caption-side: top;
 }
 
 table.second th {
@@ -51,7 +51,7 @@ table.third {
     vertical-align: top;
     border-collapse: collapse;
     border: 2px solid purple;
-    caption-side: bottom;
+    caption-side: top;
 }
 
 table.third th {
@@ -63,6 +63,7 @@ table.third th, table.third td {
     vertical-align: middle;
     border: 2px solid purple;
 }
+
 tr:first-child, tr:nth-child(...), tr:last-child {
     border-top: 2px solid orangered;
 }
