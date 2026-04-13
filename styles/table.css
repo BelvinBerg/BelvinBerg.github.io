@@ -52,12 +52,13 @@ table.third {
     border-collapse: collapse;
     border: 2px solid purple;
     caption-side: top;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
 }
 
 table.third caption{
     padding: 1em;
     background-color: lightgreen;
-    border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
 table.third th {
