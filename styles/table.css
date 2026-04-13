@@ -50,7 +50,6 @@ table.second thead tr:first-child{
 table.third {
     vertical-align: top;
     border-collapse: collapse;
-    border-top: 3px solid orange;
     border-bottom: 3px solid orange;
     caption-side: top;
 }
@@ -58,6 +57,7 @@ table.third {
 table.third caption{
     padding: 0.6em;
     background-color: lightgreen;
+    border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
 table.third th {
