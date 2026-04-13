@@ -63,18 +63,12 @@ table.third caption {
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
-table.third thead tr th {
+table.third thead{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center ;
     font-weight: bold;
     padding: 0.6em;
     background-color: lightgreen;
-    border-bottom: 3px solid orange;
-}
-
-table.third thead{
-    padding: 0.6em;
-    border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
 
