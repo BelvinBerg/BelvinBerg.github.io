@@ -55,14 +55,16 @@ table.third {
 }
 
 table.third caption {
-    text-align: center bold;
+    text-align: center;
+    font-weight: bold;
     padding: 0.6em;
     background-color: lightgreen;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
 table.third thead tr td {
-    text-align: center;
+    text-align: center ;
+    font-weight: bold;
     padding: 0.6em;
     background-color: lightgreen;
     border-bottom: 3px solid orange;
