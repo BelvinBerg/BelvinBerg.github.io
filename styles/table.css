@@ -63,7 +63,7 @@ table.third caption {
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
-table.third thead{
+table.third th{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center ;
     font-weight: bold;
@@ -72,7 +72,11 @@ table.third thead{
     border-bottom: 3px solid orange;
 }
 
-table.third tr:first-child tr:nth-child(3) {
+table.third td {
+    padding: 0.6em;
+}
+
+table.third tr:first-child td:nth-child(3) {
     vertical-align: top;
 }
 
