@@ -55,6 +55,7 @@ table.third {
 }
 
 table.third caption {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-weight: bold;
     padding: 0.6em;
@@ -63,6 +64,7 @@ table.third caption {
     border-bottom: 3px solid orange;
 }
 table.third thead tr td {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center ;
     font-weight: bold;
     padding: 0.6em;
