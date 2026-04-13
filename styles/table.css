@@ -55,7 +55,7 @@ table.third {
 }
 
 table.third caption {
-    text-align: center;
+    text-align: center bold;
     padding: 0.6em;
     background-color: lightgreen;
     border-top: 3px solid orange;
