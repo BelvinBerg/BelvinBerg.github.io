@@ -76,15 +76,11 @@ table.third td {
     padding: 0.6em;
 }
 
-table.third tr:first-child td:nth-child(3) {
+table.third tbody tr:nth-child(1) td:nth-child(1) {
     vertical-align: top;
 }
 
-table.third tr:nth-child(2) {
-    padding: 0.5em;
-}
-
-table.third tr:nth-child(3) tr:last-child {
+table.third tbody tr:nth-child(3) td:nth-child(1) {
     vertical-align: top;
 }
 
