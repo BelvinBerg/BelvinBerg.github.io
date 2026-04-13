@@ -54,7 +54,8 @@ table.third {
     caption-side: top;
 }
 
-table.third caption{
+table.third th caption {
+    text-align: center;
     padding: 0.6em;
     background-color: lightgreen;
     border-top: 3px solid orange;
@@ -66,18 +67,24 @@ table.third th {
 
 table.third thead{
     padding: 0.6em;
-    vertical-align: middle;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
 
-table.third thead tr td{
+table.third thead tr td {
     text-align: center;
     background-color: lightgreen;
 }
 
-tr:first-child, tr:nth-child(), tr:last-child {
-    border-top: 2px solid orangered;
+tr:first-child {
+
+} 
+tr:nth-child() {
+
+}
+
+tr:last-child {
+
 }
 
 @media (max-width: 425px) {
