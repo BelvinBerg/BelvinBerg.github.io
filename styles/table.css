@@ -28,7 +28,7 @@ table.first tr:nth-child(odd) {
 table.second {
     border-collapse: collapse;
     border: 2px solid purple;
-    caption-side: top;
+    caption-side: bottom;
 }
 
 table.second th {
@@ -55,18 +55,20 @@ table.third {
 }
 
 table.third caption{
+    padding: 1em;
     background-color: lightgreen;
-    border-top: 2px solid orange;
-    border-bottom: 2px solid orange;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
 }
 table.third th {
     background-color: salmon;
 }
 
-table.third th, table.third td {
-    padding: 0.7em;
-    vertical-align: middle;
-    border: 2px solid purple;
+table.third thead {
+    padding: 1em;
+    text-align: middle;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
 }
 
 tr:first-child, tr:nth-child(), tr:last-child {
