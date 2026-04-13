@@ -54,15 +54,18 @@ table.third {
     caption-side: top;
 }
 
-table.third th caption {
+table.third caption {
     text-align: center;
     padding: 0.6em;
     background-color: lightgreen;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
 }
-table.third th {
-    background-color: salmon;
+table.third thead tr td {
+    text-align: center;
+    padding: 0.6em;
+    background-color: lightgreen;
+    border-bottom: 3px solid orange;
 }
 
 table.third thead{
