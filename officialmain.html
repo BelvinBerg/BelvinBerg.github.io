@@ -7,6 +7,54 @@
     <link href="styles/indexwebsite.css" rel="stylesheet"/>
 </head>
 <body>
+    <!-- SHSU Top Navigation -->
+    <header class="header sticky top-0 z-30 bg-theme-primary transition-colors duration-500" id="header">
+        <div class="hidden lg:block theme-sky bg-theme-primary relative">
+            <nav aria-label="Utilities" class="utilities-nav">
+                <ul class="utilities-list">
+                    <li>
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Alumni</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Athletics</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Giving</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li>
+                        <button class="nav-button" type="button">Tools &amp; Support</button>
+                    </li>
+                    <li>
+                        <button class="nav-button search-button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+                                <path d="M14 14L11.1 11.1" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.6"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Header with Logo -->
+    <header class="page-header">
+        <div class="header-content">
+            <img src="./Veterans Benefits Guide - SHSU_files/shsuBearkatLogo.svg" alt="SHSU Bearkat Logo" class="logo">
+            <div class="header-text">
+                <h1>Veterans Benefits Processing</h1>
+                <p>Complete Guide to Federal and State Educational Benefits</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
         <section class="">
         <div class=" mt-8 md:mt-16 md:container">
             <div class="grid grid-cols-12 gap-x-4 xl:gap-x-20 gap-y-8">
@@ -14,7 +62,7 @@
                     <nav x-data="sideNavigation()"
                         class="@[100cqw]/section:container relative md:mt-20">
                         <button x-bind="openMenu" type="button"
-                            class="md:hidden flex justify-between text-l4 text-left mb-3.5 py-2.5 border-b border-b-theme-on-primary text-theme-on-primary w-full">
+                            class="flex justify-between text-l4 text-left mb-3.5 py-2.5 border-b border-b-theme-on-primary text-theme-on-primary w-full">
                             Menu
                             <span x-show="!open">
                                 <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
@@ -30,7 +78,7 @@
                                 </svg>
                             </span>
                         </button>
-                        <ul x-bind="mobileMenu" class="space-y-3.5 md:!block md:!h-auto pb-6">
+                        <ul x-bind="mobileMenu" class="space-y-3.5 pb-6">
                         
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
                                     <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black"
@@ -74,5 +122,44 @@
                 <div class="col-span-12 md:col-start-5 md:col-span-8">
                                                                                                                                                                                           <!-- Start WYSIWYG -->
     <section class="wysiwyg theme-white bg-theme-primary text-theme-on-primary appear @container/section" id="wysiwyg-1">
-</body>
-</html>
+        <div class="benefits-overview">
+            <h2 class="section-title">Use Your Benefits</h2>
+            <p>Whether you're a veteran, current military member, or eligible dependent, SHSU offers multiple educational benefit options to support your pursuit of higher education. This section provides guidance on how to effectively utilize your benefits for maximum impact on your academic journey.</p>
+            <ul style="margin-left: 1.5rem; line-height: 2;">
+                <li>Determine your eligibility by reviewing available federal and state programs</li>
+                <li>Gather all required documentation and forms</li>
+                <li>Submit your application through the appropriate channels</li>
+                <li>Monitor your certification status and benefit payments</li>
+                <li>Contact our office if you need assistance at any step</li>
+            </ul>
+        </div>
+        
+        <div class="benefits-overview">
+            <h2 class="section-title">Benefit Certification Information</h2>
+            <p>Certification is the process that confirms your enrollment and eligibility for educational benefits. This ensures that your benefits are properly applied to your tuition, fees, and other educational expenses. Our team handles certification for both federal VA benefits and state Hazlewood waivers.</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Federal Certification</h3>
+                    <p>For VA benefits like Post-9/11 GI Bill, we certify your enrollment directly with the VA. This includes verifying your course load, program of study, and benefit entitlement. Certification typically occurs at the beginning of each semester.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>State Certification</h3>
+                    <p>Hazlewood waiver certifications are processed through SHSU's Financial Aid Office. We verify your eligibility for the Texas veteran education benefit and ensure proper application of the waiver to your tuition charges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2024 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
+        <p>For more information, visit us at the Veterans Benefits Processing Office or contact us through our website.</p>
+    </footer>
+
+</body></html>
