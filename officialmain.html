@@ -40,7 +40,25 @@
                     </li>
                 </ul>
             </nav>
-        </div>       
+        </div>
+        <div class="bg-theme-primary relative">
+            <div class="container flex justify-between items-center py-3">
+                <div class="text-theme-accent py-2">
+                    <a aria-label="Home" href="#">
+                        <img src="./Veterans Benefits Guide - SHSU_files/shsuBearkatLogo.svg" alt="SHSU Bearkat Logo" style="height:36px;"/>
+                    </a>
+                </div>
+
+                <nav aria-label="Main" class="hidden lg:block text-theme-on-primary">
+                    <ul class="flex gap-x-4 xl:gap-x-6 items-center">
+                        <li><a class="text-l2 h-full flex items-center py-2" href="#">Academics</a></li>
+                        <li><a class="text-l2 h-full flex items-center py-2" href="#">Admissions</a></li>
+                        <li><a class="text-l2 h-full flex items-center py-2" href="#">Cost &amp; Aid</a></li>
+                        <li><a class="text-l2 h-full flex items-center py-2" href="#">Campus Life</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     
     <!-- Page Header with Logo -->
@@ -62,46 +80,37 @@
                     <nav x-data="sideNavigation()"
                         class="@[100cqw]/section:container relative md:mt-20">
                         <ul class="space-y-3.5 pb-6">
-                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black"
-                        href="#"> Veterans Benefits Processing 
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-100 scale-100">
-                        </span>
-                    </a>
+                            <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black" href="#"> Veterans Benefits Processing
+                                    <span class="dot" aria-hidden="true"></span>
+                                </a>
                             </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="#####################" target="parent">Active Duty Students
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
+                            <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance" href="#####################" target="parent">Active Duty Students
+                                    <span class="dot" aria-hidden="true"></span>
+                                </a>
                             </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="#######################" target="_parent">Benefits
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
+                            <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance" href="#######################" target="_parent">Benefits
+                                    <span class="dot" aria-hidden="true"></span>
+                                </a>
                             </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="##########################" target="_parent">Veterans and Military Connected Center ↗
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
+                            <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance" href="##########################" target="_parent">Veterans and Military Connected Center ↗
+                                    <span class="dot" aria-hidden="true"></span>
+                                </a>
                             </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="##########################" target="_parent">Contact Us
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                            </li>           
+                            <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance" href="##########################" target="_parent">Contact Us
+                                    <span class="dot" aria-hidden="true"></span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </aside>
                 
-                <div class="main-content">    
+                
+                <div class="main-content">
                                                                                                                                                                                           <!-- Start WYSIWYG -->
     <section class="wysiwyg theme-white bg-theme-primary text-theme-on-primary appear @container/section" id="wysiwyg-1">
         <div class="benefits-overview">
@@ -114,7 +123,6 @@
                 <li>Monitor your certification status and benefit payments</li>
                 <li>Contact our office if you need assistance at any step</li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas numquam natus eveniet optio cum voluptatibus mollitia dolore libero esse eligendi dolores id laudantium necessitatibus quae aperiam, fugit illo vel doloribus, quod a corrupti quaerat! Architecto voluptate quibusdam, ratione, vero distinctio ducimus vitae repellendus similique sint, magni qui harum excepturi.</p>
         </div>
         
         <div class="benefits-overview">
@@ -141,7 +149,7 @@
     </div>
     
     <footer>
-        <p>© 2026 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
+        <p>© 2024 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
         <p>For more information, visit us at the Veterans Benefits Processing Office or contact us through our website.</p>
     </footer>
 
