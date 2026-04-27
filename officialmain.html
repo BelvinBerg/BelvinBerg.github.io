@@ -54,73 +54,42 @@
         </div>
     </header>
     
+        <!-- Floating Menu -->
+    <div x-data="{ open: false }" class="fixed inset-0 z-40 pointer-events-none">
+        <!-- Hamburger Button -->
+        <button @click="open = !open" class="fixed left-5 top-[70vh] z-50 pointer-events-auto bg-theme-primary text-theme-on-primary p-2 rounded shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        
+        <!-- Menu Overlay -->
+        <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-black bg-opacity-50 pointer-events-auto" @click="open = false"></div>
+        
+        <!-- Menu Panel -->
+        <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" class="fixed left-0 top-0 h-full w-80 bg-theme-primary text-theme-on-primary shadow-lg pointer-events-auto z-50">
+            <div class="p-4">
+                <h2 class="text-xl font-bold mb-4">Menu</h2>
+                <ul class="space-y-3">
+                    <li><a href="#" class="block py-2 hover:bg-theme-accent hover:bg-opacity-20 rounded">Veterans Benefits Processing</a></li>
+                    <li><a href="#####################" class="block py-2 hover:bg-theme-accent hover:bg-opacity-20 rounded">Active Duty Students</a></li>
+                    <li><a href="#######################" class="block py-2 hover:bg-theme-accent hover:bg-opacity-20 rounded">Benefits</a></li>
+                    <li><a href="##########################" class="block py-2 hover:bg-theme-accent hover:bg-opacity-20 rounded">Veterans and Military Connected Center ↗</a></li>
+                    <li><a href="##########################" class="block py-2 hover:bg-theme-accent hover:bg-opacity-20 rounded">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <section class="">
         <div class=" mt-8 md:mt-16 md:container">
             <div class="grid grid-cols-12 gap-x-4 xl:gap-x-20 gap-y-8">
                 <aside class="@container/section col-span-12 md:col-span-3">
-                    <nav x-data="sideNavigation()"
-                        class="@[100cqw]/section:container relative md:mt-20">
-                        <button x-bind="openMenu" type="button"
-                            class="flex justify-between text-l4 text-left mb-3.5 py-2.5 border-b border-b-theme-on-primary text-theme-on-primary w-full">
-                            Menu
-                            <span x-show="!open">
-                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 0.5V12.5" stroke-width="1.5" />
-                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
-                                </svg>
-                            </span>
-                        </button>
-                        <ul x-bind="mobileMenu" class="space-y-3.5 pb-6">
-                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black"
-                        href="#"> Veterans Benefits Processing 
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-100 scale-100">
-                        </span>
-                    </a>
-                            </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="#####################" target="parent">Active Duty Students
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
-                            </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="#######################" target="_parent">Benefits
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
-                            </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="##########################" target="_parent">Veterans and Military Connected Center ↗
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                    </a>
-                            </li>
-                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
-                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
-                        href="##########################" target="_parent">Contact Us
-                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
-                        </span>
-                            </li>           
-                        </ul>
-                    </nav>
                 </aside>
                 
                 
-                <div class="col-span-12 md:col-start-5 md:col-span-8">
-                                                                                                                                                                                          <!-- Start WYSIWYG -->
+                <div class="col-span-12">                                                                                                                             <!-- Start WYSIWYG -->
     <section class="wysiwyg theme-white bg-theme-primary text-theme-on-primary appear @container/section" id="wysiwyg-1">
         <div class="benefits-overview">
             <h2 class="section-title">Use Your Benefits</h2>
@@ -158,7 +127,7 @@
     </div>
     
     <footer>
-        <p>© 2024 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
+        <p>© 2026 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
         <p>For more information, visit us at the Veterans Benefits Processing Office or contact us through our website.</p>
     </footer>
 
