@@ -1,0 +1,49 @@
+/* Sidebar container */
+.shsu-sidebar {
+    width: 260px;
+    border-right: 1px solid #d1d1d1;
+    padding-right: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+/* Navigation list */
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each item */
+.sidebar-nav li {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Links */
+.sidebar-nav a {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Hover effect */
+.sidebar-nav a:hover {
+    background-color: #f2f6ff;
+    padding-left: 0.75rem;
+}
+
+/* Active link */
+.sidebar-nav a.active {
+    background-color: #003366;
+    color: white;
+}
