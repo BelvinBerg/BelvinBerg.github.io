@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                    <aside class="@container/section col-span-12 md:col-span-3">
+                    <nav x-data="sideNavigation()"
+                        class="@[100cqw]/section:container relative md:mt-20">
+                        <button x-bind="openMenu" type="button"
+                            class="md:hidden flex justify-between text-l4 text-left mb-3.5 py-2.5 border-b border-b-theme-on-primary text-theme-on-primary w-full">
+                            Menu
+                            <span x-show="!open">
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0.5V12.5" stroke-width="1.5" />
+                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul x-bind="mobileMenu" class="space-y-3.5 md:!block md:!h-auto pb-6">
+                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black"
+                        href="#"> Veterans Benefits Processing 
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-100 scale-100">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-benefits-processing/faq.php" target="_parent">Frequently Asked Questions
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-benefits-processing/people.php" target="_parent">People
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-benefits-processing/active-duty-students.php" target="_parent">Active Duty Students
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-benefits-processing/federal-benefits.php" target="_parent">Federal Benefits 
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-benefits-processing/hazlewood.php" target="_parent">hazlewood
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                        <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="/offices-departments/veterans-military-connected-center/index.php" target="_parent">Veterans and Military Connected Center
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                        
+                        </ul>
+                    </nav>
+                </aside>
+</body>
+</html>
