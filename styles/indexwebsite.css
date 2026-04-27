@@ -410,8 +410,8 @@ footer {
 
 /* Left menu list and hover dot */
 .left-menu ul { list-style: none; margin: 0; padding: 0; }
-.left-menu ul li { position: relative; border-bottom: 1px solid rgba(0,0,0,0.08); }
-.left-menu ul li a { display: block; padding: 0.75rem 1rem; color: #072; text-decoration: none; font-weight: 600; }
+.left-menu ul li { position: relative; border-bottom: 1px solid rgb(0, 72, 83); }
+.left-menu ul li a { display: block; padding: 0.75rem 1rem; color: rgb(0, 72, 83); text-decoration: none; font-weight: 600; }
 .left-menu ul li a:hover { color: #f56423; }
 .left-menu ul li .dot { width: 6px; height: 6px; background: #f56423; border-radius: 50%; position: absolute; right: 14px; top: 50%; transform: translateY(-50%) scale(0); opacity: 0; transition: transform .18s ease, opacity .18s ease; }
 .left-menu ul li:hover .dot { transform: translateY(-50%) scale(1); opacity: 1; }
