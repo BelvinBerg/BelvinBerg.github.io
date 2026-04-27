@@ -3,22 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="testmenu.css" rel="stylesheet"/>    
+    <title>Veterans Benefits Processing</title>
+    <link href="styles/indexwebsite.css" rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* SHSU Top Navigation Styles */
+        .utilities-nav {
+            padding: 1rem 2rem;
+        }
+        
+        .utilities-list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            border-bottom-color: rgb(245, 100, 35);
+        }
+        
+        .nav-button {
+            background-color: transparent;
+            border: 2px solid rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            background-color: rgb(245, 100, 35);
+            border-color: rgb(245, 100, 35);
+        }
+        
+        .search-button {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 0.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .page-header {
+            background-color: rgb(0, 72, 83);
+            color: rgb(255, 255, 255);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rgb(0, 72, 83);
+            color: rgb(255, 255, 255);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: gt-flexa-compressed, sans-serif;
+            font-size: 3.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 0.8;
+            color: rgb(245, 100, 35);
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .intro-section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .benefits-overview {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-family: gt-america, sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: rgb(0, 72, 83);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid rgb(245, 100, 35);
+            padding-bottom: 0.5rem;
+        }
+        
+        .subsection-title {
+            font-family: gt-america, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgb(245, 100, 35);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table thead {
+            background-color: rgb(0, 72, 83);
+            color: rgb(255, 255, 255);
+        }
+        
+        .comparison-table th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 700;
+            border: 1px solid #ddd;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+        
+        .comparison-table tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        
+        .comparison-table tbody tr:hover {
+            background-color: #efefef;
+        }
+        
+        .requirement-list {
+            background: #f9f9f9;
+            border-left: 4px solid rgb(245, 100, 35);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .requirement-list h4 {
+            color: rgb(0, 72, 83);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .requirement-list ul {
+            list-style-position: inside;
+            color: #333;
+        }
+        
+        .requirement-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: rgb(163, 210, 55);
+            color: rgb(0, 72, 83);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+        
+        .caution-box {
+            background: #fff3cd;
+            border-left: 4px solid #ff6600;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        
+        .caution-box strong {
+            color: rgb(245, 100, 35);
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 4px solid rgb(245, 100, 35);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .info-card h3 {
+            color: rgb(0, 72, 83);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .info-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 100px;
+            height: auto;
+            flex-shrink: 0;
+        }
+        
+        .header-text {
+            text-align: center;
+        }
+        
+        footer {
+            background-color: rgb(0, 72, 83);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .scroll-indicator {
+            display: none;
+            text-align: center;
+            padding: 1.5rem 0;
+            color: rgb(0, 72, 83);
+            font-weight: 500;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        
+        .scroll-indicator-top {
+            display: none;
+        }
+        
+        .scroll-indicator-bottom {
+            display: none;
+        }
+        
+        .scroll-indicator p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .scroll-arrows {
+            display: inline-block;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        .arrow {
+            display: inline-block;
+            animation: bounce 2s infinite;
+            margin: 0 0.25rem;
+        }
+        
+        .arrow:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .arrow:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-10px);
+                opacity: 0.7;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-height: 700px) {
+            .scroll-indicator-top {
+                display: block;
+            }
+        }
+        
+        @media (min-height: 700px) and (max-height: 1000px) {
+            .scroll-indicator-bottom {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <aside class="shsu-sidebar">
-    <h3 class="sidebar-title">Frequently Asked Questions</h3>
+    <!-- SHSU Top Navigation -->
+    <header class="header sticky top-0 z-30 bg-theme-primary transition-colors duration-500" id="header">
+        <div class="hidden lg:block theme-sky bg-theme-primary relative">
+            <nav aria-label="Utilities" class="utilities-nav">
+                <ul class="utilities-list">
+                    <li>
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Alumni</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Athletics</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Giving</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li>
+                        <button class="nav-button" type="button">Tools &amp; Support</button>
+                    </li>
+                    <li>
+                        <button class="nav-button search-button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+                                <path d="M14 14L11.1 11.1" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.6"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Header with Logo -->
+    <header class="page-header">
+        <div class="header-content">
+            <img src="./Veterans Benefits Guide - SHSU_files/shsuBearkatLogo.svg" alt="SHSU Bearkat Logo" class="logo">
+            <div class="header-text">
+                <h1>Veterans Benefits Processing</h1>
+                <p>Complete Guide to Federal and State Educational Benefits</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="">
+        <div class=" mt-8 md:mt-16 md:container">
+            <div class="grid grid-cols-12 gap-x-4 xl:gap-x-20 gap-y-8">
+                <aside class="@container/section col-span-12 md:col-span-3">
+                    <nav x-data="sideNavigation()"
+                        class="@[100cqw]/section:container relative md:mt-20">
+                        <button x-bind="openMenu" type="button"
+                            class="flex justify-between text-l4 text-left mb-3.5 py-2.5 border-b border-b-theme-on-primary text-theme-on-primary w-full">
+                            Menu
+                            <span x-show="!open">
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0.5V12.5" stroke-width="1.5" />
+                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 12 13" stroke="currentColor" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L1.19209e-07 6.5" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul x-bind="mobileMenu" class="space-y-3.5 pb-6">
+                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance font-black"
+                        href="#"> Veterans Benefits Processing 
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-100 scale-100">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="#####################" target="parent">Active Duty Students
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="#######################" target="_parent">Benefits
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="##########################" target="_parent">Veterans and Military Connected Center ↗
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                    </a>
+                            </li>
+                                                                                <li x-data="{subMenuOpen: true}" class="border-b border-b-theme-on-primary">
+                                    <a class="text-l4 inline-block py-2.5 w-full transition-colors duration-300 text-theme-on-primary group text-balance"
+                        href="##########################" target="_parent">Contact Us
+                        <span class="w-1.5 h-1.5 bg-theme-accent rounded-full inline-block ml-1 mb-[1px] group-hover:opacity-100 group-hover:scale-100 transition opacity-0 scale-0">
+                        </span>
+                            </li>           
+                        </ul>
+                    </nav>
+                </aside>
+                
+                
+                <div class="col-span-12 md:col-start-5 md:col-span-8">
+                                                                                                                                                                                          <!-- Start WYSIWYG -->
+    <section class="wysiwyg theme-white bg-theme-primary text-theme-on-primary appear @container/section" id="wysiwyg-1">
+        <div class="benefits-overview">
+            <h2 class="section-title">Use Your Benefits</h2>
+            <p>Whether you're a veteran, current military member, or eligible dependent, SHSU offers multiple educational benefit options to support your pursuit of higher education. This section provides guidance on how to effectively utilize your benefits for maximum impact on your academic journey.</p>
+            <ul style="margin-left: 1.5rem; line-height: 2;">
+                <li>Determine your eligibility by reviewing available federal and state programs</li>
+                <li>Gather all required documentation and forms</li>
+                <li>Submit your application through the appropriate channels</li>
+                <li>Monitor your certification status and benefit payments</li>
+                <li>Contact our office if you need assistance at any step</li>
+            </ul>
+        </div>
+        
+        <div class="benefits-overview">
+            <h2 class="section-title">Benefit Certification Information</h2>
+            <p>Certification is the process that confirms your enrollment and eligibility for educational benefits. This ensures that your benefits are properly applied to your tuition, fees, and other educational expenses. Our team handles certification for both federal VA benefits and state Hazlewood waivers.</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Federal Certification</h3>
+                    <p>For VA benefits like Post-9/11 GI Bill, we certify your enrollment directly with the VA. This includes verifying your course load, program of study, and benefit entitlement. Certification typically occurs at the beginning of each semester.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>State Certification</h3>
+                    <p>Hazlewood waiver certifications are processed through SHSU's Financial Aid Office. We verify your eligibility for the Texas veteran education benefit and ensure proper application of the waiver to your tuition charges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2024 Sam Houston State University Veterans Benefits Processing. All rights reserved.</p>
+        <p>For more information, visit us at the Veterans Benefits Processing Office or contact us through our website.</p>
+    </footer>
 
-    <nav class="sidebar-nav">
-        <ul>
-            <li><a href="#">General Questions</a></li>
-            <li><a href="#">Federal Benefits</a></li>
-            <li><a href="#">Hazlewood Act</a></li>
-            <li><a href="#">Active Duty Students</a></li>
-            <li><a href="#">Using Your Benefits</a></li>
-        </ul>
-    </nav>
-</aside>
-</body>
-</html>
+</body></html>
