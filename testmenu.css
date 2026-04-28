@@ -472,8 +472,8 @@
         /* Hamburger toggle button styling */
         .menu-toggle-btn {
             position: fixed;
-            left: 10px;
-            top: 280px;
+            left: 20px;
+            top: 20px;
             z-index: 1000;
             background: transparent;
             border: none;
