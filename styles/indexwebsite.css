@@ -414,8 +414,12 @@ footer {
 }
 
 /* Sidebar list styling */
-.left-menu ul { list-style: none; padding: 0; }
-.left-menu ul li { position: relative; border-bottom: 1px solid rgb(0, 72, 83); }
+.left-menu ul { list-style: none; padding: 0; 
+}
+.left-menu ul li { 
+	position: relative;
+	border-bottom: 2px solid rgb(0, 72, 83); 
+}
 
 /* Sidebar link styling */
 .left-menu ul li a {
