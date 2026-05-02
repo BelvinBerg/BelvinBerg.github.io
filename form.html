@@ -66,16 +66,16 @@
     <fieldset> 
         <legend>How Did You Hear About Us?</legend> 
         <label for="search_engine">Search Engine</label> 
-        <input type="text" name="search_engine" id="search_engine" 
+        <input type="checkbox" name="search_engine" id="search_engine" 
             required autocomplete="on"><br>         
         <label for="social_media">Social Media</label> 
-        <input type="text" name="social_media" id="social_media" required  
+        <input type="checkbox" name="social_media" id="social_media" required  
             autocomplete="on"><br> 
         <label for="email">Email</label> 
-        <input type="text" name="email" id="email" required 
+        <input type="checkbox" name="email" id="email" required 
             autocomplete="on"><br> 
         <label for="friend_or_colleague">Friend or Colleague</label> 
-        <input type="text" name="friend_or_colleague" id="friend_or_colleague"  
+        <input type="checkbox" name="friend_or_colleague" id="friend_or_colleague"  
             autocomplete="on"><br> 
     </fieldset> 
     
@@ -97,7 +97,8 @@
     
     <fieldset> 
         <legend>Submit Your Membership</legend> 
-
+        <input type="submit" id="subnit" value="Submit">
+        <input type="reset_fields" id="reset_fields" value="Reset Fields">
     </fieldset> 
 
 </body>
