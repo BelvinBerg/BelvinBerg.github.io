@@ -54,4 +54,5 @@ textarea {
 
 .button-row input[type="submit"],
 .button-row input[type="reset"] {
+    margin: 0 0px;
 }
