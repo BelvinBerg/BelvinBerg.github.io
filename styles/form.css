@@ -50,6 +50,7 @@ textarea {
 
 .button-row {
     text-align: center;
+    border-bottom: 0.5em;
 }
 
 .button-row input[type="submit"],
