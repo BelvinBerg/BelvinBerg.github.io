@@ -48,6 +48,12 @@ textarea {
     width: 35em; 
 } 
 
-#buttons input { 
-    width: 10em; 
-} 
+.button-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-row input[type="submit"],
+.button-row input[type="reset"] {
+    margin: 0 10px;
+}
