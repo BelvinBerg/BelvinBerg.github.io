@@ -50,10 +50,8 @@ textarea {
 
 .button-row {
     text-align: center;
-    border-bottom: 0.5em;
 }
 
 .button-row input[type="submit"],
 .button-row input[type="reset"] {
-    margin: 0 10px;
 }
